@@ -1,0 +1,348 @@
+msc {
+ arcgradient = 8;
+
+# LINEAS DE INTERFACES
+ 
+    a [label="b5:18", textcolour="red"], 
+    b [label="54:91", textcolour="green"], 
+    c [label="b3:41", textcolour="orange"], 
+    d [label="a0:74", textcolour="green"], 
+    e [label="35:6f", textcolour="blue"], 
+    f [label="65:54", textcolour="orange"], 
+    g [label="66:c2", textcolour="red"], 
+    h [label="cd:be", textcolour="red"], 
+    i [label="6f:e0", textcolour="orange"], 
+    j [label="40:4d", textcolour="blue"], 
+    k [label="ff:ff", textcolour="None"];
+
+# IDENTIFICACION DE HOSTS
+
+    a rbox b [label="Router A", textbgcolour="#7fff7f"],
+    a rbox b [label="Router A", textbgcolour="#7fff7f"],
+    c rbox d [label="Router B", textbgcolour="#7fff7f"],
+    c rbox d [label="Router B", textbgcolour="#7fff7f"],
+    e rbox f [label="Router C", textbgcolour="#7fff7f"],
+    e rbox f [label="Router C", textbgcolour="#7fff7f"],
+    g rbox g [label="Web 1", textbgcolour="#7fff7f"],
+    h rbox h [label="Web 2", textbgcolour="#7fff7f"],
+    i rbox i [label="Proxy", textbgcolour="#7fff7f"],
+    j rbox j [label="Usuario", textbgcolour="#7fff7f"],
+    k rbox k [label="Broadcast", textbgcolour="#7fff7f"];
+
+ 
+    
+    j=>k [label="1", linecolour="blue"]; 
+    
+    e=>j [label="2", linecolour="blue"]; 
+    
+    f=>j [label="3", linecolour="orange"]; 
+    
+    j=>e [label="4", linecolour="blue"]; 
+    
+    e=>k [label="5", linecolour="blue"]; 
+    
+    i=>e [label="6", linecolour="orange"]; 
+    
+    e=>i [label="7", linecolour="blue"]; 
+    
+    i=>k [label="8", linecolour="orange"]; 
+    
+    c=>i [label="9", linecolour="orange"]; 
+    
+    d=>i [label="10", linecolour="green"]; 
+    
+    i=>c [label="11", linecolour="orange"]; 
+    
+    c=>k [label="12", linecolour="orange"]; 
+    
+    b=>c [label="13", linecolour="green"]; 
+    
+    a=>c [label="14", linecolour="red"]; 
+    
+    c=>b [label="15", linecolour="orange"]; 
+    
+    a=>k [label="16", linecolour="red"]; 
+    
+    g=>a [label="17", linecolour="red"]; 
+    
+    a=>g [label="18", linecolour="red"]; 
+    
+    g=>a [label="19", linecolour="red"]; 
+    
+    b=>c [label="20", linecolour="green"]; 
+    
+    d=>i [label="21", linecolour="green"]; 
+    
+    i=>c [label="22", linecolour="orange"]; 
+    
+    c=>b [label="23", linecolour="orange"]; 
+    
+    i=>c [label="24", linecolour="orange"]; 
+    
+    a=>g [label="25", linecolour="red"]; 
+    
+    c=>b [label="26", linecolour="orange"]; 
+    
+    a=>g [label="27", linecolour="red"]; 
+    
+    g=>a [label="28", linecolour="red"]; 
+    
+    b=>c [label="29", linecolour="green"]; 
+    
+    d=>i [label="30", linecolour="green"]; 
+    
+    g=>a [label="31", linecolour="red"]; 
+    
+    b=>c [label="32", linecolour="green"]; 
+    
+    d=>i [label="33", linecolour="green"]; 
+    
+    i=>c [label="34", linecolour="orange"]; 
+    
+    c=>b [label="35", linecolour="orange"]; 
+    
+    a=>g [label="36", linecolour="red"]; 
+    
+    i=>e [label="37", linecolour="orange"]; 
+    
+    i=>e [label="38", linecolour="orange"]; 
+    
+    f=>j [label="39", linecolour="orange"]; 
+    
+    f=>j [label="40", linecolour="orange"]; 
+    
+    j=>e [label="41", linecolour="blue"]; 
+    
+    j=>e [label="42", linecolour="blue"]; 
+    
+    e=>i [label="43", linecolour="blue"]; 
+    
+    e=>i [label="44", linecolour="blue"]; 
+    
+    j=>e [label="45", linecolour="blue"]; 
+    
+    j=>e [label="46", linecolour="blue"]; 
+    
+    e=>i [label="47", linecolour="blue"]; 
+    
+    e=>i [label="48", linecolour="blue"]; 
+    
+    i=>c [label="49", linecolour="orange"]; 
+    
+    i=>c [label="50", linecolour="orange"]; 
+    
+    c=>b [label="51", linecolour="orange"]; 
+    
+    c=>b [label="52", linecolour="orange"]; 
+    
+    a=>k [label="53", linecolour="red"]; 
+    
+    h=>a [label="54", linecolour="red"]; 
+    
+    a=>h [label="55", linecolour="red"]; 
+    
+    a=>h [label="56", linecolour="red"]; 
+    
+    h=>a [label="57", linecolour="red"]; 
+    
+    h=>a [label="58", linecolour="red"]; 
+    
+    b=>c [label="59", linecolour="green"]; 
+    
+    b=>c [label="60", linecolour="green"]; 
+    
+    d=>i [label="61", linecolour="green"]; 
+    
+    d=>i [label="62", linecolour="green"]; 
+    
+    i=>c [label="63", linecolour="orange"]; 
+    
+    i=>c [label="64", linecolour="orange"]; 
+    
+    c=>b [label="65", linecolour="orange"]; 
+    
+    i=>c [label="66", linecolour="orange"]; 
+    
+    i=>c [label="67", linecolour="orange"]; 
+    
+    a=>h [label="68", linecolour="red"]; 
+    
+    c=>b [label="69", linecolour="orange"]; 
+    
+    c=>b [label="70", linecolour="orange"]; 
+    
+    c=>b [label="71", linecolour="orange"]; 
+    
+    a=>h [label="72", linecolour="red"]; 
+    
+    a=>h [label="73", linecolour="red"]; 
+    
+    a=>h [label="74", linecolour="red"]; 
+    
+    h=>a [label="75", linecolour="red"]; 
+    
+    h=>a [label="76", linecolour="red"]; 
+    
+    b=>c [label="77", linecolour="green"]; 
+    
+    b=>c [label="78", linecolour="green"]; 
+    
+    d=>i [label="79", linecolour="green"]; 
+    
+    d=>i [label="80", linecolour="green"]; 
+    
+    h=>a [label="81", linecolour="red"]; 
+    
+    h=>a [label="82", linecolour="red"]; 
+    
+    b=>c [label="83", linecolour="green"]; 
+    
+    b=>c [label="84", linecolour="green"]; 
+    
+    d=>i [label="85", linecolour="green"]; 
+    
+    d=>i [label="86", linecolour="green"]; 
+    
+    i=>c [label="87", linecolour="orange"]; 
+    
+    c=>b [label="88", linecolour="orange"]; 
+    
+    i=>e [label="89", linecolour="orange"]; 
+    
+    h=>a [label="90", linecolour="red"]; 
+    
+    f=>j [label="91", linecolour="orange"]; 
+    
+    j=>e [label="92", linecolour="blue"]; 
+    
+    i=>e [label="93", linecolour="orange"]; 
+    
+    e=>i [label="94", linecolour="blue"]; 
+    
+    b=>c [label="95", linecolour="green"]; 
+    
+    d=>i [label="96", linecolour="green"]; 
+    
+    i=>c [label="97", linecolour="orange"]; 
+    
+    i=>e [label="98", linecolour="orange"]; 
+    
+    i=>c [label="99", linecolour="orange"]; 
+    
+    i=>e [label="100", linecolour="orange"]; 
+    
+    i=>e [label="101", linecolour="orange"]; 
+    
+    c=>b [label="102", linecolour="orange"]; 
+    
+    c=>b [label="103", linecolour="orange"]; 
+    
+    h=>a [label="104", linecolour="red"]; 
+    
+    f=>j [label="105", linecolour="orange"]; 
+    
+    f=>j [label="106", linecolour="orange"]; 
+    
+    b=>c [label="107", linecolour="green"]; 
+    
+    d=>i [label="108", linecolour="green"]; 
+    
+    i=>c [label="109", linecolour="orange"]; 
+    
+    c=>b [label="110", linecolour="orange"]; 
+    
+    i=>e [label="111", linecolour="orange"]; 
+    
+    j=>e [label="112", linecolour="blue"]; 
+    
+    j=>e [label="113", linecolour="blue"]; 
+    
+    e=>i [label="114", linecolour="blue"]; 
+    
+    e=>i [label="115", linecolour="blue"]; 
+    
+    f=>j [label="116", linecolour="orange"]; 
+    
+    f=>j [label="117", linecolour="orange"]; 
+    
+    f=>j [label="118", linecolour="orange"]; 
+    
+    j=>e [label="119", linecolour="blue"]; 
+    
+    e=>i [label="120", linecolour="blue"]; 
+    
+    j=>e [label="121", linecolour="blue"]; 
+    
+    e=>i [label="122", linecolour="blue"]; 
+    
+    a=>h [label="123", linecolour="red"]; 
+    
+    a=>h [label="124", linecolour="red"]; 
+    
+    a=>h [label="125", linecolour="red"]; 
+    
+    a=>h [label="126", linecolour="red"]; 
+    
+    d=>i [label="127", linecolour="green"]; 
+    
+    i=>d [label="128", linecolour="orange"]; 
+    
+    f=>j [label="129", linecolour="orange"]; 
+    
+    j=>f [label="130", linecolour="blue"]; 
+    
+    g=>a [label="131", linecolour="red"]; 
+    
+    b=>c [label="132", linecolour="green"]; 
+    
+    d=>i [label="133", linecolour="green"]; 
+    
+    i=>d [label="134", linecolour="orange"]; 
+    
+    c=>b [label="135", linecolour="orange"]; 
+    
+    a=>g [label="136", linecolour="red"]; 
+    
+    g=>a [label="137", linecolour="red"]; 
+    
+    b=>c [label="138", linecolour="green"]; 
+    
+    d=>i [label="139", linecolour="green"]; 
+    
+    h=>a [label="140", linecolour="red"]; 
+    
+    h=>a [label="141", linecolour="red"]; 
+    
+    b=>c [label="142", linecolour="green"]; 
+    
+    b=>c [label="143", linecolour="green"]; 
+    
+    d=>i [label="144", linecolour="green"]; 
+    
+    d=>i [label="145", linecolour="green"]; 
+    
+    i=>d [label="146", linecolour="orange"]; 
+    
+    i=>d [label="147", linecolour="orange"]; 
+    
+    c=>b [label="148", linecolour="orange"]; 
+    
+    c=>b [label="149", linecolour="orange"]; 
+    
+    a=>h [label="150", linecolour="red"]; 
+    
+    a=>h [label="151", linecolour="red"]; 
+    
+    h=>a [label="152", linecolour="red"]; 
+    
+    h=>a [label="153", linecolour="red"]; 
+    
+    b=>c [label="154", linecolour="green"]; 
+    
+    b=>c [label="155", linecolour="green"]; 
+    
+    d=>i [label="156", linecolour="green"]; 
+    
+    d=>i [label="157", linecolour="green"];
+
+}

@@ -1,0 +1,25 @@
+msc {
+ arcgradient = 8;
+
+# LINEAS DE INTERFACES
+{% for i in interfaces %} 
+    {{ i.letra }} [label="{{i.label}}", textcolour="{{ i.color }}"]
+    {%- if loop.last %};{% else %},{%- endif %} 
+{%- endfor %}
+
+# IDENTIFICACION DE HOSTS
+{% for h in hosts -%}
+  {% if h.interfaces|count > 1 %}
+    {{ h.interfaces[0].letra }} rbox {{ h.interfaces[1].letra }} [label="{{ h.name }}", textbgcolour="#7fff7f"]
+  {%- else %}
+    {{ h.interfaces[0].letra }} rbox {{ h.interfaces[0].letra }} [label="{{ h.name }}", textbgcolour="#7fff7f"]
+  {%- endif %}
+  {%- if loop.last %};{% else %},{%- endif %} 
+{%- endfor %}
+
+{% for m in mensajes %} 
+    {# { m['i_src'].letra }}->{% if m['Mac_dst'] == 'Broadcast' %}*{% else %}{{ m['i_dst'].letra }}{% endif %} [label="{{ m['No.'] }}"] ;#}
+    {{ m['i_src'].letra }}=>{{ m['i_dst'].letra }} [label="{{ m['No.'] }}", linecolour="{{ m['i_src'].color}}"];
+{%- endfor %}
+
+}
